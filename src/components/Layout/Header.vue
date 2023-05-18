@@ -45,5 +45,6 @@ const activeRoute = ref(currentRouteName)
   color: var(--el-menu-active-color);
   font-size: 20px;
   border: none;
+  padding: 0;
 }
 </style>

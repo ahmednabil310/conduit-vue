@@ -9,7 +9,10 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Article: typeof import('./src/components/HomeView/Article.vue')['default']
+    Banner: typeof import('./src/components/HomeView/Banner.vue')['default']
     BaseLayout: typeof import('./src/components/Layout/BaseLayout.vue')['default']
+    ElAvatar: typeof import('element-plus/es')['ElAvatar']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElCheckbox: typeof import('element-plus/es')['ElCheckbox']
     ElCheckboxGroup: typeof import('element-plus/es')['ElCheckboxGroup']
@@ -19,6 +22,7 @@ declare module '@vue/runtime-core' {
     ElForm: typeof import('element-plus/es')['ElForm']
     ElFormItem: typeof import('element-plus/es')['ElFormItem']
     ElHeader: typeof import('element-plus/es')['ElHeader']
+    ElHeading: typeof import('element-plus/es')['ElHeading']
     ElInput: typeof import('element-plus/es')['ElInput']
     ElLink: typeof import('element-plus/es')['ElLink']
     ElMain: typeof import('element-plus/es')['ElMain']
@@ -32,7 +36,11 @@ declare module '@vue/runtime-core' {
     ElSelectV2: typeof import('element-plus/es')['ElSelectV2']
     ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
     ElSwitch: typeof import('element-plus/es')['ElSwitch']
+    ElTabPane: typeof import('element-plus/es')['ElTabPane']
+    ElTabs: typeof import('element-plus/es')['ElTabs']
+    ElText: typeof import('element-plus/es')['ElText']
     ElTimePicker: typeof import('element-plus/es')['ElTimePicker']
+    FeedTabs: typeof import('./src/components/HomeView/FeedTabs.vue')['default']
     Form: typeof import('./src/components/Shared/Form.vue')['default']
     Header: typeof import('./src/components/Layout/Header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
