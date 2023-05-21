@@ -11,8 +11,8 @@
     <!-- Render when user is logged in -->
     <template v-if="userData.user.token">
       <el-menu-item router="/" index="/">Home</el-menu-item>
-      <el-menu-item router="/signin" index="/signin">New Article</el-menu-item>
-      <el-menu-item router="/signup" index="/signup">Settings</el-menu-item>
+
+      <el-menu-item @click="handleLogout">Logout</el-menu-item>
     </template>
     <!-- Render when user is logged out -->
     <template v-else>
@@ -25,12 +25,20 @@
 
 <script lang="ts" setup>
 import { useUserDataStore } from '@/stores/userData'
+import storage from '@/utils/storage'
 import { computed, ref } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 const route = useRoute()
+const router = useRouter()
 const currentRouteName = computed(() => route.path)
 const userData = useUserDataStore()
 const activeRoute = ref(currentRouteName)
+const store = useUserDataStore()
+const handleLogout = () => {
+  storage.clearToken()
+  store.$reset()
+  router.push('/signin')
+}
 </script>
 
 <style scoped>

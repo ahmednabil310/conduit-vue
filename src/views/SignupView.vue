@@ -29,10 +29,10 @@ import { useForm } from 'vee-validate'
 import Input from '@/components/Shared/Input.vue'
 import Form from '@/components/Shared/Form.vue'
 import { useMutation } from '@tanstack/vue-query'
-import { signUp } from '../api/auth/Auth'
+import { signUp } from '../api/Auth'
 
-import router from '@/router'
 import { useToast } from 'vue-toastification'
+import router from '@/router'
 
 const toast = useToast()
 

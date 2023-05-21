@@ -8,7 +8,7 @@
 <style scoped>
 .el-row {
   background-color: var(--el-color-primary);
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 20px;
   color: var(--el-color-white);
   flex-direction: column;

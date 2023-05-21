@@ -17,6 +17,7 @@
     "@tanstack/vue-query": "^4.29.7",
     "axios": "^1.4.0",
     "element-plus": "^2.3.4",
+    "oh-vue-icons": "1.0.0-rc3",
     "pinia": "^2.0.36",
     "pinia-plugin-persistedstate": "^3.1.0",
     "vee-validate": "^4.9.3",
