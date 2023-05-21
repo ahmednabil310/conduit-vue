@@ -20,22 +20,22 @@ import { toRef } from 'vue'
 const props = defineProps({
   name: {
     type: String,
-    required: true
+    required: true,
   },
   placeholder: {
     type: String,
-    required: true
+    required: true,
   },
   type: {
     type: String,
     required: false,
-    default: 'text'
+    default: 'text',
   },
   showPassword: {
-    type: Boolean,
+    type: String,
     required: false,
-    default: false
-  }
+    default: false,
+  },
 })
 
 const { value, errorMessage } = useField(toRef(props, 'name'))

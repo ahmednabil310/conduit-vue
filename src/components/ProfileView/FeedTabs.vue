@@ -9,7 +9,7 @@
           v-for="(article, index) in articles"
           :key="index"
           :articleData="article"
-          :refech="refetch"
+          :refetch="refetch"
         />
       </template>
     </el-tab-pane>
